@@ -228,16 +228,6 @@ if __name__ == "__main__":
                                phi = phi_)
 
   t = [i*(dc*ipp*1.0e6/100.0)/(len(chirp)) for i in range(len(chirp))] 
-
-  #np.savetxt("chirp_signal.txt",
-  #            np.column_stack((t, np.real(chirp), np.imag(chirp))),
-  #            header="time_us real imag")
-
-  # chirpModUnion_1(ipp, sr_tx, sr_rx, A_1, A_2, dc_1, dc_2, fc_1, fc_2, bw_1, bw_2, t_d_, window_1, window_2)
-  # full_chirp_1 = chirpModUnion_1(ipp, sr_tx, sr_rx, A, A, 12.0, 12.0, 0.0e6, 2.0e6, 1.0e6, 0.0e6, td_, 'B', 'R')
-  
-  # chirpModUnion_2(ipp, sr_tx, sr_rx, A_1, A_2, dc_1, dc_2, fc_1, fc_2, bw_1, bw_2, t_d_, window_1, window_2, rep_1, rep_2)
-  # full_chirp_2 = chirpModUnion_2(ipp, sr_rx, sr_rx, A, A/2.0, dc, 1.0, fc, fc, bw, bw, td_, window_, 'R', rep_, rep_)
   
   plt.plot(t, np.real(chirp), label="Real") 
   plt.plot(t, np.imag(chirp), label="Imag") 
