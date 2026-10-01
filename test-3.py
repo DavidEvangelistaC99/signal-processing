@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy import signal
 from modFreq import chirpMod
 
-fs = 20.0e6
+fs = 10.0e7
 T = 5.0e-6
 n = int(fs*T) 
 nFFTs = 4096
